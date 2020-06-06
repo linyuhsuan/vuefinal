@@ -1,0 +1,94 @@
+
+.blog-header {
+    line-height: 1;
+    border-bottom: 1px solid #e5e5e5;
+   
+  }
+  
+  .blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+    font-size: 2.25rem;
+  }
+  
+  .blog-header-logo:hover {
+    text-decoration: none;
+  }
+  
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+
+  .cart-dropdown-menu {
+    position: absolute;
+    top: 120%;
+    z-index: 1000;
+    display: none;
+    &.show {
+      display: block;
+    }
+    float: left;
+    padding: 0.5rem 0;
+    margin: 0.125rem 0 0;
+    text-align: left;
+    list-style: none;
+    background-color: white;
+    //background-clip: padding-box;
+
+    border-width: 2px;
+    //border-radius: 0.25rem;
+    left: -205px;
+    width: 250px;
+  
+    //購物車內容超出一定高度時以捲軸方式呈現
+    .scroll {
+      max-height: 30vh;
+      overflow-y: auto;
+    }
+    .cart-title,
+    .cart-unit,
+    .cart-price {
+      font-size: 0.75rem;
+      font-family: '微軟正黑體';
+    }
+    .bg-cover{
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  body.of-hidden {
+    overflow: hidden; //作為購物車顯示時固定頁面不讓滾動
+  }
+  .cart-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(blue, 0.7);
+    z-index: 1000;
+    &.show {
+      display: block;
+    }
+  }
+  .dropdown-search-menu{
+    position: absolute;
+    top: 120%;
+    z-index: 1000;
+    display: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid $primary;
+    border-radius: 0.25rem;
+   
+  }
+  @media (min-width: 768px) {
+    .display-4 {
+      font-size: 3rem;
+    }
+  }
+
+
+  
+  

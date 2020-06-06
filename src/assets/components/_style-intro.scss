@@ -1,0 +1,119 @@
+ .style-intro {
+   .intro-content {
+     .content {
+       font-size: 15px;
+       line-height: 28px;
+      text-align: justify;
+      padding: 0 17%;
+     }
+   }
+   .card-designer {
+    .card-head {
+      .img {
+        position: relative;
+        width: 70%;
+        height: 0;
+        padding-bottom: 50%;
+        margin-top:25%;
+        margin-bottom: 20%;
+        margin-left: 80%;
+        background-position: auto;
+        background-size: cover;
+        // &::before {
+        //   position: absolute;
+        //   display: block;
+        //   content: "";
+        //   width: 20px;
+        //   height: 20px;
+        //   top: 25%;
+        //   right: -25%;
+        //   background-color: blue;
+        // }
+        &:after {
+          position: absolute;
+          display: block;
+          content: "";
+          top: -25%;
+          right: 55%;
+          left: -23%;
+          bottom: -25%;
+          background-color: #d3a886;
+          z-index: -1;
+        }
+      }
+    }
+  }
+  }
+//    .img-section {
+//      .img-back {
+//       position: relative;
+//       margin-left: 28%;
+//        width: 60%;
+//        height: 0;
+//        padding-bottom: 80%; 
+//        background-color:#ca9e78;
+//        z-index: -1;
+      
+//         &:after {      
+//         position: absolute;
+//         content: "";
+//         display: block;
+//          top: 0;
+//          left: 0;
+//          right: 0
+         
+//        }
+//       }
+//       //  &:hover {
+//       //    .img-front.right {
+//       //      transform: translateX(-10%);
+//       //    }
+//       //    .img-front.left {
+//       //      transform: translateX(10%);
+//       //   }
+//       //  } 
+    
+//       //  .img-front {
+         
+//       //    position: relative;
+//       //    //top: 40%;
+//       //    width: 80%;
+//       //    height:0;
+//       //   padding-bottom: 80%; 
+//       //    //z-index: 2;
+//       //    background-position: center 60%;
+//       //    background-size: cover;
+//       //   }
+// //         transform: translateX(0);
+// //         transition: transform 0.8s;
+// //         //頁面右側為圖片時
+// //         &.right {
+// //           left: -20%;
+// //         }
+// //         //頁面左側為圖片時
+// //         &.left {
+// //           right: -20%;
+// //         }
+      
+//       //  .title {
+//       //    position: absolute;
+//       //    top: 15%;
+//       //    z-index: 2;
+//       //    font-size: 3rem;
+//       //    @include media-breakpoint-up(md) {
+//       //      font-size: 4rem;
+//       //    }
+//       //    //頁面右側為圖片時
+//       //    &.right {
+//       //      right: 0;
+//       //      transform: rotate(90deg);
+//       //    }
+//       //  //頁面左側為圖片時
+//       //   &.left {
+//       //      left: 0;
+//       //      transform: rotate(-90deg);
+//       //  }
+//       //  }
+    
+//    }
+ 

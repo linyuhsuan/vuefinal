@@ -1,0 +1,15 @@
+@import "~bootstrap/scss/functions";
+@import"./helpers/_variables";
+@import "~bootstrap/scss/bootstrap";
+
+
+@import"./dashboard";
+@import"./components/_navBar.scss";
+@import"./components/card-designer.scss";
+@import "./components/_vueCarousel.scss";
+@import "./components/_style-intro.scss";
+@import "./components/_productsCard.scss";
+@import "./components/_productPage.scss";
+@import"./components/_products.scss";
+@import"./components/_footer.scss";
+

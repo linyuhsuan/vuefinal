@@ -1,0 +1,190 @@
+// 
+.portfolio-item-warp {
+    // padding-left: $spacer * 3;
+    // padding-right: $spacer * 3;
+    position: relative;
+
+    .portfolio-title {
+        position: absolute;
+        top: 0;
+        right: -13%;
+        color: $gray-400;
+        transform-origin: 0 0;
+        transform: rotate(90deg);
+
+        // h2 {
+        //     position: relative;
+        //     font-family: 'Open Sans', sans-serif;
+        //     font-size: $font-size-base;
+        //     font-weight: 600;
+
+        //     &::before {
+        //         content: '';
+        //         background: $gray-400;
+        //         position: absolute;
+        //         bottom: 50%;
+        //         right: $spacer * -9;
+        //         height: 1px;
+        //         width: $spacer * 8;
+        //     }
+        // }
+    }
+}
+
+// hover
+.portfolio-hover {
+    position: relative;
+    height: 100%; 
+    //height:200px;
+    background-size:cover;
+    background-position-x:cneter;
+    //background-position-y: 70%;
+    //background-attachment: fixed;
+
+  
+   
+   
+
+    // 容器
+    >.portfolio-hover-content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        display: flex;
+        height: 100%;
+     
+        background-color: $primary;
+        transition: all .3s linear;
+
+        // 容器內層 置中對齊
+        &.content-center {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        // 容器內層 兩邊對齊
+        &.content-between {
+            justify-content: space-between;
+            padding: $spacer * 2;
+            // div:first-child {
+
+            // }
+        }
+    }
+
+    // 控制內層
+    &:hover {
+        .portfolio-hover-content {
+            opacity: 1;
+        }
+
+        .content-center,
+        .content-between {
+
+            .portfolio-name,
+            .portfolio-subname,
+            .portfolio-price,
+            .portfolio-add-to-cart {
+                opacity: 1;
+                transform: translate(0);
+            }
+        }
+    }
+}
+
+// 內層 樣式
+
+
+// 名稱 副名稱 價錢
+.portfolio-name,
+.portfolio-subname,
+.portfolio-price,
+.portfolio-add-to-cart {
+    a {
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+    }
+
+    &:hover {
+        a {
+            color: white;
+        }
+    }
+}
+
+.portfolio-name {
+   // margin-bottom: $spacer * .5;
+   a {
+        color: $white;
+        font-size: 36px;
+    }
+}
+
+.portfolio-subname {
+    a {
+        color: white;
+    }
+
+    // span {
+    //     color: $gray-600;
+    // }
+}
+
+.portfolio-price {
+    margin-top: $spacer;
+    span {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        &.light {
+            color: $white;
+        }
+        // &.dark {
+        //     color: $dark;
+        // }
+    }
+}
+
+.portfolio-hover-content {
+
+    // 在置中對齊下的 動畫樣式
+    &.content-center {
+        .portfolio-name {
+            transform: translateX(35px);
+            transition: all .4s ease-in-out;
+        }
+
+        .portfolio-subname {
+            transform: translateX(25px);
+            transition: all .6s ease-in-out;
+
+        }
+    }
+
+    // 在兩邊對齊下的 動畫樣式
+    &.content-between {
+        .portfolio-name {
+            transform: translateX(35px);
+            transition: all .4s ease-in-out;
+        }
+
+        .portfolio-subname {
+            transform: translateX(15px);
+            transition: all .8s ease-in-out;
+        }
+
+        .portfolio-price {
+            transform: translateX(15px);
+            transition: all .8s ease-in-out;
+        }
+
+        .portfolio-add-to-cart {
+            transform: translateX(25px);
+            transition: all .8s ease-in-out;
+        }
+    }
+}

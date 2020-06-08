@@ -20,7 +20,7 @@ export default {
     };
   },
   methods: {
-      //1.送一個訊息到message裡面
+      //1.送一個訊息到message裡
     updateMessage(message, status) {
       const timestamp = Math.floor(new Date() / 1000);
       this.messages.push({

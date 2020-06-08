@@ -43,26 +43,7 @@
       </tbody>
     </table>
       <pagination :pagination="pagination" @gopage="getProducts"></pagination>
-    <!-- <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item" :class="{'disabled':!pagination.has_pre}" >
-          <a class="page-link" href="#" aria-label="Previous"  @click.prevent="getProducts(pagination.current_page - 1)" >
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item" v-for="page in pagination.total_pages" :key="page" :class="{'active':pagination.current_page === page}">
-          <a class="page-link" href="#" @click.prevent="getProducts(page)">{{page}}</a>
-        </li>
-        <li class="page-item" :class="{'disabled':!pagination.has_next}" >
-          <a class="page-link" href="#" aria-label="Next" @click.prevent="getProducts(pagination.current_page + 1)">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-     -->
+ 
   </div>
  
     <div class="modal fade" id="productModal" tabindex="-1" role="dialog"
@@ -274,7 +255,7 @@ export default {
     openDelProductModal(item){
       this.tempProduct = item; //將點到的地方傳入tempProduct來作為刪除的預備
       console.log(this.tempProduct)
-      $("#delProductModal").modal("show");//打開刪除模板
+      $("#delProductModal").modal("show");
     },
     delProduct(){
       const vm = this;

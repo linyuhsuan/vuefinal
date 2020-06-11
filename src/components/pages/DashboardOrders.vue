@@ -38,32 +38,11 @@
           <td>
             <button class="btn btn-primary btn-sm" @click="openModal(item)">編輯</button>
           </td>
-           <!-- <td>
-            <button class="btn btn-outline-danger btn-sm" data-toggle="modal"
-          data-target="#delOrderModal" @click="openDelOrderModal(item)">刪除</button>
-          </td> -->
+        
         </tr>
       </tbody>
     </table>
-   <!-- <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item" :class="{'disabled':!pagination.has_pre}" >
-          <a class="page-link" href="#" aria-label="Previous"  @click.prevent="getCoupon(pagination.current_page - 1)" >
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item" v-for="page in pagination.total_pages" :key="page" :class="{'active':pagination.current_page === page}">
-          <a class="page-link" href="#" @click.prevent="getCoupon(page)">{{page}}</a>
-        </li>
-        <li class="page-item" :class="{'disabled':!pagination.has_next}" >
-          <a class="page-link" href="#" aria-label="Next" @click.prevent="getCoupon(pagination.current_page + 1)">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
-    </nav> -->
+  
     <pagination :pagination="pagination" @gopage="getOrder"></pagination>
     <div class="modal fade" id="orderModal" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-lg" role="document">

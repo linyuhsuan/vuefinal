@@ -33,14 +33,13 @@
     text-align: left;
     list-style: none;
     background-color: white;
-    //background-clip: padding-box;
+    
 
     border-width: 2px;
-    //border-radius: 0.25rem;
+
     left: -205px;
     width: 250px;
   
-    //購物車內容超出一定高度時以捲軸方式呈現
     .scroll {
       max-height: 30vh;
       overflow-y: auto;
@@ -57,7 +56,7 @@
     }
   }
   body.of-hidden {
-    overflow: hidden; //作為購物車顯示時固定頁面不讓滾動
+    overflow: hidden; 
   }
   .cart-overlay {
     display: none;

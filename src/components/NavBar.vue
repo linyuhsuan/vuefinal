@@ -104,12 +104,7 @@
             </tbody>
           </table>
         </div>
-        <!-- <div
-          class="d-flex justify-content-between align-items-center pt-2 px-2 pb-2 border-top border-bottom"
-        >
-          <span>小計</span>
-          <span class="h5 m-0 text-success">{{ProductData.total|currency}}</span>
-        </div> -->
+        
         <button class="btn btn-outline-primary btn-block  mt-3" @click="toCart">CHECK OUT</button>
       </div>
     </div>
@@ -184,7 +179,6 @@ methods:{
     },
     removeCartItem(id) {
       const vm = this;
-      //$(`#NavBarCart-${index}`).attr("disabled", true);
       vm.currentProductId = id;
       const api = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/cart/${id}`;
       vm.$http.delete(api).then(response => {
@@ -195,10 +189,7 @@ methods:{
     },
   
     dropdownToggle() {
-      // console.log($(".dropdown-toggle"));
-      //this.show=!this.show;
        $(".cart-dropdown-menu").toggleClass("show");
-      //$("body").toggleClass("of-hidden");
       $(".cart-overlay").toggleClass("show");
     },
     

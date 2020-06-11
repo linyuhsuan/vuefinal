@@ -22,10 +22,7 @@
             <tr >
              <tr v-for="item in CartData.carts" :key="item.id">
               <td width="42" class="align-middle">
-                <!-- <div
-                  class="bg-cover"
-                  :style="`background-image:url('${item.product.imageUrl}');width: 42%;height:42%;`"
-                ></div> -->
+              
               </td>
               <td class="">
                  <div
@@ -39,10 +36,7 @@
                  <div class="text-primary" v-if="item.coupon">
                   已套用優惠券
                 </div>
-                <!-- <br>
-                <span class="text-success">顏色 : </span>
-                <br>
-                <span class="text-success">尺寸 : </span> -->
+               
               </td>
               <td class="align-middle  text-right">
                 <div class>{{item.qty}}</div>
@@ -93,11 +87,7 @@
    <div class=" col-4 " >總計</div>
     <div class=" col-4"  v-if="CartData.final_total">{{CartData.final_total+80|currency}}</div>
    </div>
-      <!-- <div class="row justify-content-lg-around p-2">
-     <router-link type="button" class="btn btn-primary  " 
-     to="cart/step2" :class="{'disabled':CartData.carts.length<1}">下一步</router-link>
-    </div>  -->
-  
+   
  </div>
 </div>
  </div>
@@ -128,22 +118,7 @@
           <span class="text-primary col-md-4 offset-md-3 " v-if="errors.has('name')">姓名必須輸入</span>
         </div>
 
-   <!-- <div class=" form-group row">
-            <label for="username">收件人姓名</label>
-            <input
-              type="text"
-              class="form-control"
-              :class="{'is-invalid':errors.has('name')}"
-              name="name"
-              id="username"
-              v-validate="'required'"
-              placeholder="輸入姓名"
-              v-model="form.user.name"
-            />
-            <span class="text-danger" v-if="errors.has('name')">姓名欄位不得留空</span>
-          </div> -->
-
-
+   
         <div class="form-group row">
           <label  class="col-sm-3 col-form-label" for="usertel">手機號碼</label>
           <input type="tel" class="form-control col-sm-7" id="usertel"

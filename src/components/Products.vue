@@ -1,45 +1,3 @@
-
-      
-      <!-- <div class="row portfolio-item-warp">
-        <div class="card border-0 col-md-4 mb-4" v-for="item in products" :key="item.id">
-          <div class="portfolio-hover" style="height: 350px; background-size: cover; background-position: center center;background-repeat:no-repeat;"
-           @click.prevent="moreInfo(item.id)"
-          :style="{backgroundImage: `url(${item.imageUrl})`}">
-          </div>
-          <div class="card-body ">
-            <span class="badge badge-secondary float-right ml-2">{{ item.category }}</span>
-            <h5 class="card-title portfolio-name">
-              <a href="#" class="text-dark">{{ item.title }}</a>
-            </h5>
-            <p class="card-text">{{ item.content }}</p>
-            <div class="portfolio-price d-flex justify-content-lg-end align-items-end">
-            
-              <del class="h6" v-if="item.price">NT. {{ item.origin_price }} </del>
-              <div class="h6" v-if="item.price">NT.{{ item.price }} </div>
-            </div>
-          </div>
-          <div class=" d-flex"> -->
-//             <!-- <a href="#"
-//                 class="products-card-link text-decoration-none"
-//                 @click.prevent="moreInfo(item.id)"> -->
-//                 <!-- <div class="products-card-overlay d-flex">
-//                   <div class="btn btn-outline-secondary btn-sm m-auto"
-//                   v-if="status.loadingItem === item.id"
-//                   >更多細節</div>
-//                 </div> -->
-//               <!-- </a> -->
-//             <!-- <button type="button" class="btn btn-outline-danger  ml-auto" @click="addtoCart(item.id)">
-//               <i class="fas fa-spinner fa-spin" v-if="status.loadingItem === item.id"></i>
-//               ADD TO CART
-//             </button> -->
-<!-- //           </div>
-//         </div>
-//       </div>
-  
-//   </div>
-// </template> -->
-
-
 <template>
     <div>
      
@@ -79,20 +37,11 @@ export default {
 props: ['products'],
  data() {
     return {
-      // productsData: [],
-  
-    // //   products: {},
+    
        status: {
          loadingItem:'',
       },
-    //   isLoading: true,
-     
-    //   category: '全部商品',
-  
-    //   products: [],
-    //   pagination: [],
-    //   isLoading: false,
-    //   categoryList: []
+   
    
     };
   },

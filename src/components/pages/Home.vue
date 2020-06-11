@@ -26,34 +26,7 @@
         </slide>
       </carousel>
   
-        <!-- <div class="container-fluid my-4">
-      <div class="row style-intro">
-         <div class="col-md-7 col-12">
-          <div class="card-designer px-lg-5 px-md-4">
-            <div class="card-head">
-              <div
-                class="img ml-auto"
-                style="background-image:url('https://images.unsplash.com/photo-1560448205-4d9b3e6bb6db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')"
-              ></div>
-            </div>
-        
-            </div> 
-          </div>
-        <div class="col-md-5 col-12">
-          <div
-            class="intro-content big-title h-100 d-flex flex-column justify-content-center text-center text-primary"
-          >
-            <h3 class="mb-0">
-              <span class="border border-top-0 border-bottom-0 px-3">Ećo Style</span>
-            </h3>
-            <small class="text-muted">ASin Design</small>
-            <p
-              class="content mt-md-6 mt-3"
-            >設計師 Ećo 著眼于自然形態、簡潔線條和舒適性，使用大量的淺色元素，流暢的曲線，營造了悠閒氣氛，並為空間注入一股活潑的氣息，打造出無論從哪個角度看都美貌不減，而且無比舒適的傢俱。</p>
-          </div>
-        </div> 
-        </div>
-      </div> -->
+      
    <div class="container text-primary p-4">
         <div class="row flex-column-reverse flex-md-row ">
           <div class="col-md-5">
@@ -136,42 +109,6 @@
       height:400px;background-size:cover;background-position-x:cneter;background-position-y: 70%;
       background-attachment: fixed;"
     ></div>
-
-
-
-   
-  
- <!-- <div class="container-fluid my-4">
-       <div class="row style-intro">
-         
-        <div class="col-md-5 col-12">
-          <div
-            class="intro-content big-title h-100 d-flex flex-column justify-content-center text-center text-primary"
-          >
-            <h3 class="mb-0">
-              <span class="border border-top-0 border-bottom-0 px-3">Ećo Style</span>
-            </h3>
-            <small class="text-muted">ASin Design</small>
-            <p
-              class="content mt-md-6 mt-3"
-            >使用大量的淺色元素，流暢的曲線，營造了悠閒氣氛，並為空間注入一股活潑的氣息，打造出無論從哪個角度看都美貌不減，而且無比舒適的傢俱。</p>
-          </div>
-        </div> 
-        <div class="col-md-7 col-12">
-          <div class="card-designer px-lg-5 px-md-4">
-            <div class="card-head">
-              <div
-                class="img ml-auto"
-                style="background-image:url('https://images.unsplash.com/photo-1560448205-4d9b3e6bb6db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80')"
-              ></div>
-            </div>
-        
-            </div> 
-          </div>
-        </div>
- </div> -->
- <!-- <picture-wall></picture-wall> -->
- 
       </div>
 
    

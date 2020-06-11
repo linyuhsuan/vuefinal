@@ -146,7 +146,7 @@ methods:{
     },
     removeCartItem(id) {
       const vm = this;
-      //$(`#NavBarCart-${index}`).attr("disabled", true);
+     
       vm.currentProductId = id;
       const api = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/cart/${id}`;
       vm.$http.delete(api).then(response => {

@@ -44,25 +44,7 @@
       </tbody>
     </table>
    <pagination :pagination="pagination" @gopage="getCoupon"></pagination>
-      <!-- <nav aria-label="Page navigation example">
-      <ul class="pagination">
-        <li class="page-item" :class="{'disabled':!pagination.has_pre}" >
-          <a class="page-link" href="#" aria-label="Previous"  @click.prevent="getCoupon(pagination.current_page - 1)" >
-            <span aria-hidden="true">&laquo;</span>
-            <span class="sr-only">Previous</span>
-          </a>
-        </li>
-        <li class="page-item" v-for="page in pagination.total_pages" :key="page" :class="{'active':pagination.current_page === page}">
-          <a class="page-link" href="#" @click.prevent="getCoupon(page)">{{page}}</a>
-        </li>
-        <li class="page-item" :class="{'disabled':!pagination.has_next}" >
-          <a class="page-link" href="#" aria-label="Next" @click.prevent="getCoupon(pagination.current_page + 1)">
-            <span aria-hidden="true">&raquo;</span>
-            <span class="sr-only">Next</span>
-          </a>
-        </li>
-      </ul>
-    </nav> -->
+    
     
   </div>
  
@@ -205,12 +187,12 @@ export default {
     openModal(isNew, item) {
       if (isNew) {
         this.tempCoupon = {};
-        //this.tempTimestamp = "";
+        
         this.isNew = true;
       } 
      else {
         this.tempCoupon = Object.assign({}, item);
-        //this.formatTime(this.tempCoupon.due_date);
+       
         this.isNew = false;
       }
       $("#couponModal").modal("show");
@@ -225,7 +207,7 @@ export default {
        api = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/admin/coupon/${vm.tempCoupon.id}`;
         httpMethod = 'put';
       }
-      //vm.formatTimestamp(vm.tempCoupon.due_date);
+     
       const coupon = vm.tempCoupon;
       vm.$http[httpMethod](api, { data: coupon }).then(response => {
         if (response.data.success) {
@@ -249,7 +231,7 @@ export default {
       const vm = this;
       const api = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/admin/coupon/${vm.tempCoupon.id}`;
       this.$http.delete(api).then(response => {
-        //console.log(response.data);
+      
           vm.coupons = response.data.coupons;
         if(response.data.success){
           $("#delCouponModal").modal("hide");

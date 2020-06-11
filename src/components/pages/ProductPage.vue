@@ -2,7 +2,7 @@
   <div class="container  pb-9">
     <loading :active.sync="status.isLoading"></loading>
     <div class="row mt-md-4">
-      <!-- 商品圖片 section-->
+      <!-- 商品圖片-->
       <div class="col-md-7">
         <div class="Page-imgSection">
           <div class="Page-img">
@@ -14,7 +14,7 @@
           </div>
         </div>
       </div>
-      <!-- 商品資訊 section-->
+      <!-- 商品資訊-->
       <div class="col-md-5 text-primary">
         <div class="Page-info py-4">
           <div class="pb-4 border-bottom">
@@ -115,7 +115,7 @@
           </div>
         </div>
       </div>
-      <!--    相關商品 section    -->
+     
      
     </div>
   </div>
@@ -129,10 +129,10 @@ import $ from "jquery";
 export default {
   data() {
     return {
-      //nextDisabled: false, 
+  
       status: {
         isLoading: false,
-       //uploadCart: false //作為商品加入購物車時的過場動圖條件
+      
       },
      
       products: [],
@@ -182,7 +182,7 @@ export default {
     //添加商品到購物車
     addCart(id, qty = 1) {
       const vm = this;
-      vm.status.uploadCart = true; //作為購物車動態icon的開關條件
+      vm.status.uploadCart = true; 
       let api = `${process.env.APIPATH}/api/${process.env.CUSTOMPATH}/cart`;
       let item = {
         product_id: id,
@@ -191,9 +191,9 @@ export default {
       vm.$http.post(api, { data: item }).then(response => {
         console.log("加到購物車內：", response);
         if (response.data.success) {
-          vm.status.uploadCart = false; //作為購物車動態icon的開關條件
-          vm.$bus.$emit("message:push", response.data.message, "success"); // 觸發事件使頁面回應動作後的訊息，可參考bus.js
-          vm.$bus.$emit("reGetCart"); //觸發重新讀取購物車資料的事件，可參考bus.js
+          vm.status.uploadCart = false; 
+          vm.$bus.$emit("message:push", response.data.message, "success"); 
+          vm.$bus.$emit("reGetCart"); 
         } else {
           vm.status.uploadCart = false;
           vm.$bus.$emit("message:push", response.data.message, "danger");

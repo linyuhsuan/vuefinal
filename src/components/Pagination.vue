@@ -39,7 +39,7 @@ export default {
   props: ["pagination"],
   methods: {
     goPage(page) {
-      // console.log("emit", page);
+  
       this.$emit("gopage", page);
     }
   }

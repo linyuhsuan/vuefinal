@@ -1,17 +1,17 @@
 <template>
   <div>
 
-     <!-- <loading :active.sync="isLoading"></loading> -->
+  
   <div class="container">
    <div class="">
         <div class="">
-      <!-- 左側選單 (List group) -->
+      <!-- 左側選單  -->
       <div class="row col-md-6  offset-md-4 text-primary p-4">
         <a class="col-2 "
         v-for="item in categoryList" :key="item"  @click.prevent="category = item"
          :class="{'active': category == item}"  >
           {{item}} 
-           <!-- <span class="badge badge-primary rounded-circle " :products="products.filter(item => item.category == category)" >{{products.length}}</span> -->
+          
           </a>
       </div>
     </div>
@@ -94,8 +94,7 @@ export default {
    
   },
   created() {
-    // this.getproductData();
-    // this.getPagination();
+ 
       this.getProductAll();
     this.getPageProduct();
   },

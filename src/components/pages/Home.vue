@@ -28,7 +28,7 @@
   
       
    <div class="container text-primary p-4">
-        <div class="row flex-column-reverse flex-md-row ">
+        <div class="row flex-column-reverse flex-md-row mb-4">
           <div class="col-md-5">
             <div class="bg-cover portfolio-hover"  style="background-image:url('https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');">
               <div class="portfolio-hover-content content-center">
@@ -88,6 +88,7 @@
                 </div>
                 <div class="portfolio-subname">
                   <a href="#">Decoration Category</a>
+               
                 </div>
               </div>
             </div>
@@ -103,12 +104,16 @@
         </div>
       </div>
 
+      
+
 <div
-      class="bg-fixed"
+      class="bg-fixed img-responsive"
       style="background-image:url('https://images.unsplash.com/photo-1536627792483-9300ee53afdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80');
-      height:400px;background-size:cover;background-position-x:cneter;background-position-y: 70%;
-      background-attachment: fixed;"
+        height:400px;background-size:cover;background-position-x:cneter;background-position-y: 70%;
+        background-attachment: fixed;"
     ></div>
+
+    
       </div>
 
    

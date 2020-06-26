@@ -168,7 +168,7 @@ export default {
         vm.status.isLoading = false;
       });
     },
-    //取得全部資料，作為相關商品的資料
+    //取得全部資料
     getProductsData() {
       const vm = this;
       vm.status.isLoading = true;
@@ -179,7 +179,6 @@ export default {
         vm.status.isLoading = false;
       });
     },
-    //添加商品到購物車
     addCart(id, qty = 1) {
       const vm = this;
       vm.status.uploadCart = true; 

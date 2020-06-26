@@ -6,8 +6,8 @@
    <div class="">
         <div class="">
       <!-- 左側選單  -->
-      <div class="row col-md-6  offset-md-4 text-primary p-4">
-        <a class="col-2 "
+      <div class=" row col-md-12 text-primary justify-content-center text-center ">
+        <a class="col-3"
         v-for="item in categoryList" :key="item"  @click.prevent="category = item"
          :class="{'active': category == item}"  >
           {{item}} 

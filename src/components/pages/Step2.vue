@@ -8,49 +8,55 @@
        <div >2.填寫運送資訊</div>
        <div>3.購物完成</div>
       </div>
-        <table class="table text-primary">
-          <thead>
-            <th width="50"></th>
-            <th colspan="2">商品資訊</th> 
-            <th width="60" class="text-center">數量</th>
-            <th width="75" class="d-md-table-cell d-none">單價</th>
-             <th width="75" class="d-md-table-cell d-none">折扣價</th>
-            <th width="90" >小計</th>
-            <th width="90">下次買</th>
-          </thead>
-          <tbody>
-            <tr >
-             <tr v-for="item in CartData.carts" :key="item.id">
-              <td width="42" class="align-middle">
-              
-              </td>
-              <td class="">
+        <table class="table table-rwd text-primary">
+　<tr class="tr-only-hide">
+　<th width="50"></th>
+             　     <th  colspan="1" class="d-md-table-cell d-none text-center">商品資訊</th>
+             <th width="100" class="d-md-table-cell d-none text-center">商品</th>
+           
+                 
+            <th width="60" class="d-md-table-cell d-none text-center">數量</th>
+            <th width="75" class="d-md-table-cell d-none text-center">單價</th>
+             <th width="75" class="d-md-table-cell d-none text-center">折扣價</th>
+            <th width="90 " class="text-center">小計</th>
+            <th width="90" class="text-center">下次買</th>
+　</tr>
+
+
+<tbody class="text-primary">
+           
+             <tr v-for="(item) in CartData.carts" :key="item.id">
+           <td class="align-middle text-left d-md-table-cell d-none "></td>
+             
+
+             
+               <td class="" data-th="商品資訊">
                  <div
                   class="bg-cover"
                   :style="`background-image:url('${item.product.imageUrl}');width: 80%;height:180px;background-size:cover; background-repeat:no-repeat;`">
                   </div>
                
               </td>
-              <td class="align-middle text-left d-md-table-cell d-none ">
+               <td class="align-middle text-left d-md-table-cell d-none " data-th="商品" >
                 <span class="text-primary ">{{item.product.title}}</span>
                  <div class="text-primary" v-if="item.coupon">
                   已套用優惠券
                 </div>
-               
+              
               </td>
-              <td class="align-middle  text-right">
-                <div class>{{item.qty}}</div>
+              <td class="align-middle  text-right" data-th="數量">
+                <span>{{item.qty}}</span>
               </td>
-              <td class="align-middle text-right  d-md-table-cell d-none">
-                <span class >{{item.product.origin_price|currency}}</span>
+              <td class="align-middle text-right" data-th="單價">
+                <span>{{item.product.origin_price|currency}}</span>
               </td>
-               <td class="align-middle text-right">
-                <span class="text-muted">{{item.product.price|currency}}</span>
+               <td class="align-middle text-right" data-th="折扣價" >
+                <span class="text-muted" >{{CartData.final_total|currency}}</span>
               </td> 
-              <td class="align-middle text-right">
-                <span class>{{item.product.price * item.qty |currency}}</span>
+              <td class="align-middle text-right" data-th="小計">
+                <span>{{item.product.price * item.qty |currency}}</span>
               </td> 
-                <td class="align-middle text-center">
+                <td class="align-middle text-right"  data-th="下次買">
                 <button type="button"
                   class="btn btn-outline-primary btn-sm border-0"  @click="removeCartItem(item.id)">
                   <i class="far fa-trash-alt"></i>
@@ -60,7 +66,8 @@
             
             </tr>
           </tbody>
-        </table>
+
+</table>
         <hr>
         <div class="container">
         <div class="row">
@@ -70,22 +77,22 @@
   </div>
   
   <div class="col-md-3 ml-md-auto text-primary">
-      <div class="row justify-content-center">
+      <div class="row justify-content-end">
    
     <div class=" ">還差{{1000-CartData.final_total}}就能達到免運門檻唷</div>
    </div>
-    <div class="row justify-content-center p-2">
-   <div class=" col-4 ">折扣價</div>
-    <div class=" col-4">{{CartData.final_total|currency}}</div> 
+    <div class="row justify-content-end p-2">
+   <div class=" col-4 text-right">折扣價</div>
+    <div class=" col-4 text-right">{{CartData.final_total|currency}}</div> 
     </div>
 
-    <div class="row justify-content-center p-2">
-   <div class=" col-4   " >運費</div>
-    <div class=" col-4" >$80</div>
+    <div class="row justify-content-end p-2">
+   <div class=" col-4  text-right " >運費</div>
+    <div class=" col-4 text-right" >$80</div>
    </div>
-    <div class="row justify-content-center p-2">
-   <div class=" col-4 " >總計</div>
-    <div class=" col-4"  v-if="CartData.final_total">{{CartData.final_total+80|currency}}</div>
+    <div class="row justify-content-end p-2">
+   <div class=" col-4 text-right" >總計</div>
+    <div class=" col-4 text-right"  v-if="CartData.final_total">{{CartData.final_total+80|currency}}</div>
    </div>
    
  </div>

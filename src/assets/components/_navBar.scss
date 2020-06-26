@@ -1,63 +1,40 @@
-
-.blog-header {
-    line-height: 1;
-    border-bottom: 1px solid #e5e5e5;
-   
-  }
-  
-  .blog-header-logo {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-    font-size: 2.25rem;
-  }
-  
-  .blog-header-logo:hover {
-    text-decoration: none;
-  }
-  
-  
-  .display-4 {
-    font-size: 2.5rem;
-  }
-
+ 
   .cart-dropdown-menu {
-    position: absolute;
-    top: 120%;
-    z-index: 1000;
-    display: none;
-    &.show {
-      display: block;
-    }
-    float: left;
-    padding: 0.5rem 0;
-    margin: 0.125rem 0 0;
-    text-align: left;
-    list-style: none;
-    background-color: white;
-    
-
-    border-width: 2px;
-
-    left: -205px;
-    width: 250px;
+      position: absolute;
+      top: 120%;
+      z-index: 1000;
+      display: none;
+      &.show {
+        display: block;
+      }
+      float: left;
+      padding: 0.5rem 0;
+      margin: 0.125rem 0 0;
+      text-align: left;
+      list-style: none;
+      background-color: white;
+      
   
-    .scroll {
-      max-height: 30vh;
-      overflow-y: auto;
+      border-width: 2px;
+  
+      left: -205px;
+      width: 250px;
+    
+      .scroll {
+        max-height: 30vh;
+        overflow-y: auto;
+      }
+      .cart-title,
+      .cart-unit,
+      .cart-price {
+        font-size: 0.75rem;
+        font-family: '微軟正黑體';
+      }
+      .bg-cover{
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
     }
-    .cart-title,
-    .cart-unit,
-    .cart-price {
-      font-size: 0.75rem;
-      font-family: '微軟正黑體';
-    }
-    .bg-cover{
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-  }
-  body.of-hidden {
-    overflow: hidden; 
-  }
   .cart-overlay {
     display: none;
     position: fixed;
@@ -82,12 +59,29 @@
     border-radius: 0.25rem;
    
   }
-  @media (min-width: 768px) {
-    .display-4 {
-      font-size: 3rem;
-    }
+
+
+.blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 24px;
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+}
+
+
+.display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .display-4 {
+    font-size: 3rem;
   }
-
-
-  
+}
   

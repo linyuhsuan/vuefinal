@@ -1,9 +1,9 @@
 <template>
-  <div class="container  pb-9">
+  <div class="container  py-9">
     <loading :active.sync="status.isLoading"></loading>
-    <div class="row mt-md-4">
+    <div class="row mt-md-4 py-4">
       <!-- 商品圖片-->
-      <div class="col-md-7">
+      <div class="col-md-7 py-6">
         <div class="Page-imgSection">
           <div class="Page-img">
      

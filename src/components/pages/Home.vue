@@ -27,9 +27,10 @@
       </carousel>
   
       
-   <div class="container text-primary p-4">
-        <div class="row flex-column-reverse flex-md-row mb-4">
-          <div class="col-md-5">
+   <div class="container text-primary p-4 ">
+     <!-- 桌子 -->
+        <div class="row flex-column-reverse flex-md-row mb-4 justify-content-center ">
+          <div class="col-md-6">
             <div class="bg-cover portfolio-hover"  style="background-image:url('https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60');">
               <div class="portfolio-hover-content content-center">
                 <div class="portfolio-name">
@@ -42,28 +43,37 @@
            
             </div>
           </div>
-          <div class="col-md-2 px-md-0 order-1 order-md-0">
+          <div class="col-md-5 px-md-0 order-1 order-md-0">
             <div class="d-flex align-items-center py-5 pl-4">
-              <div class="my-5 border border-top-0 border-bottom-0 px-3">
+            <div>
+              <div class="my-5 border border-top-0 border-bottom-0 border-right-0  px-3">
                 <p class="mb-0"><small>桌子 ></small></p>
-                
                 <h3 class="h5">Table</h3>
-            
               </div>
+             <div class="my-5  px-3">
+               <sapn>123154654645</sapn>
+             </div>
             </div>
-          </div>
+            </div>
+          </div> 
+         
         </div>
-        
-               <div class="row  d-flex justify-content-end p-2">
-                 <div class="col-md-2 px-md-0 order-1 order-md-0">
+        <!-- 椅子 -->
+               <div class="row flex-column-reverse  flex-md-row mb-4 justify-content-center">
+                 <div class="col-md-3 px-md-0 order-1 order-md-0">
             <div class="d-flex align-items-center  py-5 pl-4">
-              <div class="my-5 border border-top-0 border-bottom-0 px-3">
+              <div>
+              <div class="my-5 border border-top-0 border-bottom-0 border-right-0 px-3">
                 <p class="mb-0"><small>椅子 ></small></p>
                 <h3 class="h5">Chair</h3>
               </div>
+                <div class="my-5  px-3">
+               <sapn>123154654645</sapn>
+             </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-5 pr-md-0">
+          <div class="col-md-6 pr-md-0">
             <div class="bg-cover portfolio-hover"  style="background-image:url('https://images.unsplash.com/photo-1560184897-67f4a3f9a7fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80')">
               <div class="portfolio-hover-content content-center">
                 <div class="portfolio-name">
@@ -72,15 +82,16 @@
                 <div class="portfolio-subname">
                   <a href="#">Chair Category</a>
                 </div>
+                
               </div>
          
             </div>
           </div>
           
         </div>
-
-          <div class="row  d-flex justify-content-start p-2">
-          <div class="col-md-5 pr-md-0">
+        <!-- 裝飾 -->
+          <div class="row flex-column-reverse flex-md-row mb-4 justify-content-center">
+          <div class="col-md-6 pr-md-0">
             <div class="bg-cover portfolio-hover"  style="background-image:url('https://images.unsplash.com/photo-1502185472670-259cd7f94868?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1191&q=80')">
               <div class="portfolio-hover-content content-center">
                 <div class="portfolio-name">
@@ -93,34 +104,29 @@
               </div>
             </div>
           </div>
-          <div class="col-md-2 px-md-0 order-1 order-md-0">
+          <div class="col-md-5 px-md-0 order-1 order-md-0">
             <div class="d-flex align-items-center  py-5 pl-4">
-              <div class="my-5 border border-top-0 border-bottom-0 px-3">
+              <div>
+              <div class="my-5 border border-top-0 border-bottom-0  border-right-0 px-3">
                 <p class="mb-0"><small>裝飾 ></small></p>
                 <h3 class="h5">Decoration</h3>
+              </div>
+               <div class="my-5  px-3">
+               <sapn>1231546546454564</sapn>
+             </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      
-
-<div
+  <!--滿版img  -->
+    <div
       class="bg-fixed img-responsive"
       style="background-image:url('https://images.unsplash.com/photo-1536627792483-9300ee53afdf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1189&q=80');
         height:400px;background-size:cover;background-position-x:cneter;background-position-y: 70%;
-        background-attachment: fixed;"
-    ></div>
-
-    
+        background-attachment: fixed;">
       </div>
-
-   
-       
-     
- 
-  
+      </div>
 </template>
 
 <script>
@@ -136,17 +142,17 @@ export default {
         0: {
           imgUrl:
             "https://images.unsplash.com/photo-1586053015795-0e7dc4c44d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-          //title: "Ećo Series"
+         
         },
         1: {
           imgUrl:
             "https://images.unsplash.com/photo-1519643381401-22c77e60520e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80",
-          //title: "Ȏlḍ Series"
+         
         },
         2: {
           imgUrl:
             "https://images.unsplash.com/photo-1556909190-eccf4a8bf97a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-          //title: "ḾetälGråy Series"
+        
         },
       }
     };

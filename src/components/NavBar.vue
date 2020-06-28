@@ -111,7 +111,7 @@
       </header> -->
 
 
- <header class="blog-header py-3">
+ <!-- <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-start align-items-center">
           <div class="col-4 pt-1">
              <div class="header-dropdown ml-3 ml-sm-0">
@@ -218,9 +218,9 @@
     </div>
           </div>
         </div>
-      </header>
+      </header> -->
 
-       <div class="nav-scroller py-1 mb-2">
+       <!-- <div class="nav-scroller py-1 mb-2">
         <nav class="nav d-flex justify-content-between">
        <router-link  class="p-3 text-muted nav-link" to="/product">All Item</router-link>
       <router-link class="p-3 text-muted nav-link"  to="/product">Question</router-link>
@@ -228,7 +228,128 @@
         
          
         </nav>
+        
       </div>
+       -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light col-12">
+       
+  <button class="navbar-toggler" type="button" data-toggle="collapse"   @click="navbarTogglerDemo03" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>  
+   <router-link class="blog-header-logo text-dark col-3" to="/home">La'quisine</router-link>
+  <div class="col-5 justify-content-end d-flex">
+    <!-- signout -->
+    <a class="nav-link " href="#"  @click.prevent="signout"><i class="far fa-user"></i></a>
+            
+    <!-- <div class="dropdown mr-md-0 mr-2 "  > -->
+    <!-- shopping cart -->
+    <a href="#" class="nav-link cart-dropdown " @click=" dropdownToggle">  
+        <i class="fas fa-shopping-bag fa-1x " ></i>
+        <span class="badge badge-primary rounded-circle " v-if="ProductData.carts">{{ProductData.carts.length}}</span>
+      </a>
+    <div class="cart-dropdown-menu px-3" >  
+        <h6 class="text-primary">已選擇商品</h6>
+        <div class="scroll"> 
+          <div class="text-center text-primary py-6" v-if="ProductData.carts.length < 1">購物車沒有產品喔！！</div>
+          <table class="table table-sm">
+            <tbody>
+              <tr v-for="item in ProductData.carts" :key="item.id">
+                <td class="align-middle">
+                  <button
+                    type="button"
+                   
+                    class="btn btn-outline-primary btn-sm border-0"
+                    @click="removeCartItem(item.id)"
+                  >
+                    <i class="far fa-trash-alt" v-if="currentProductId !== item.id"></i>
+                    <i class="fas fa-spinner fa-spin" v-if="currentProductId === item.id"></i>
+                  </button>
+                </td>
+                <td class="align-middle">
+                  <div
+                    class="bg-cover"
+                    
+                    :style="`background-image:url('${item.product.imageUrl}');width:35px;height:35px;`"
+                  ></div>
+                </td>
+                <td class="align-middle">
+                  <div class="text-muted">
+                    <div class="cart-title text-primary">{{item.product.title}}</div>
+                    <div class="cart-unit text-primary">{{item.qty}}/{{item.product.unit}}</div>
+                  </div>
+                </td>
+                <td class="align-middle text-right">
+                  <span class="text-primary cart-price">NT.{{item.product.price|currency}}</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <button class="btn btn-outline-primary btn-block  mt-3" @click="toCart">CHECK OUT</button>
+      <!-- </div> -->
+    </div>
+  </div>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto  col-6 ">
+    
+      <li class="nav-item">
+      <router-link  class="p-3 text-muted nav-link" to="/product">All Item</router-link>
+      </li>
+      <li class="nav-item">
+      <router-link class="p-3 text-muted nav-link"  to="/product">Question</router-link>
+      </li>
+    </ul>
+    <!-- search -->
+    <form class="form-inline my-2 my-lg-0" >
+       <div class="input-group-append">
+      <input
+          class="form-control input-search "
+          type="text"
+          placeholder="請輸入商品"
+          v-model="search"
+          @input.prevent="openList(true)"/>
+
+      <button
+          class="bg-primary d-flex justify-content-center align-items-center btn btn-outline-primary">
+          <i class="fa fa-search text-white search-btn "></i>
+      </button>
+        </div>
+        <div
+            class="header-dropdown-search-menu dropdown-search-menu col-md-4">
+            <table class="table mb-0">
+              <thead>
+                <th colspan="2" class="py-2">
+                  <span class="text-primary">搜尋結果</span>
+                </th>
+              </thead>
+              <tbody>
+                <tr v-for="item in searchResult" :key="item.id">
+                  <th scope="row">
+                    <a
+                      href="#"
+                      class="dropdown-search-menu-link"
+                      @click.prevent="moreInfo(item.id)"
+                      >{{ item.title }}</a>
+                  </th>
+                  <td class="text-primary text-right">
+                    {{ item.price | currency }}
+                  </td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr v-if="searchResult.length === 0">
+                  <td colspan="2"><span class="text-primary">無此產品</span></td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+    </form>
+    
+  </div>
+  
+</nav>
   </div>
   </div>
 </template>
@@ -251,8 +372,6 @@ data(){
      category: '全部',
       pageProduct: [],
       products: [],
-     
-     
       categoryList: []
   };
 },
@@ -299,7 +418,9 @@ methods:{
       $("body").toggleClass("of-hidden");
       $(".cart-overlay").toggleClass("show");
     },
-   
+   navbarTogglerDemo03(){
+       $('#navbarTogglerDemo03').collapse('show');
+   },
     //結帳按鈕觸發時關閉購物車並導向結帳畫面
     toCart() {
       this.dropdownToggle();
@@ -343,7 +464,7 @@ methods:{
         // cart dropdown 10 秒後自動關閉
         setTimeout(() => {
           $('.dropdown-cart-menu').hide();
-        }, 10000);
+        }, 5000);
       }
     },
         moreInfo(id) {
@@ -362,4 +483,3 @@ methods:{
   }
 }
 </script>
-  

@@ -17,12 +17,12 @@
   
       border-width: 2px;
   
-      left: -205px;
-      width: 250px;
+     
+      width: 210px;
     
       .scroll {
         max-height: 30vh;
-        overflow-y: auto;
+        overflow:hidden;
       }
       .cart-title,
       .cart-unit,
@@ -51,13 +51,15 @@
   .dropdown-search-menu{
     position: absolute;
     top: 120%;
-    z-index: 1000;
+   
+    // position: relative;
+    // z-index: 1000;
     display: none;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid $primary;
     border-radius: 0.25rem;
-   
+    width:55%;
   }
 
 
@@ -85,3 +87,12 @@
   }
 }
   
+
+  .navbar{
+    z-index: 10;          
+   position: fixed;      
+   top: 0;
+   left: 0;
+   margin-top: 0;
+   min-width: 100%;
+ }

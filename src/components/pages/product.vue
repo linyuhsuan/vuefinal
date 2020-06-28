@@ -2,8 +2,8 @@
   <div>
 
   
-  <div class="container">
-   <div class="">
+  <div class="container py-6">
+   <div class="py-4">
         <div class="">
       <!-- 左側選單  -->
       <div class=" row col-md-12 text-primary justify-content-center text-center ">
@@ -18,9 +18,9 @@
 		
    </div>
     
-    <div class="">
+    <div class="py-4" >
    
-        <div class="">
+        <div class="" >
         <div class="" v-if="category == '全部'" >
           <products :products="pageProduct"></products>
          

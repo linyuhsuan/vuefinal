@@ -292,7 +292,7 @@
     </div>
   </div>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto  col-6 ">
+    <ul class="navbar-nav mr-auto  col-6  mt-2 mt-lg-0">
     
       <li class="nav-item">
       <router-link  class="p-3 text-muted nav-link" to="/product">All Item</router-link>

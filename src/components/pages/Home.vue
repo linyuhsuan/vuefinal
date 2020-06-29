@@ -142,17 +142,17 @@ export default {
         0: {
           imgUrl:
             "https://images.unsplash.com/photo-1586053015795-0e7dc4c44d12?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-         
+          title: "Decortion Series"
         },
         1: {
           imgUrl:
             "https://images.unsplash.com/photo-1519643381401-22c77e60520e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80",
-         
+            title: "Table Series"
         },
         2: {
           imgUrl:
             "https://images.unsplash.com/photo-1556909190-eccf4a8bf97a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
-        
+           title: "Kitchen Series"
         },
       }
     };

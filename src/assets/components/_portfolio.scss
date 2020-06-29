@@ -1,9 +1,9 @@
 
-.product-item-warp {
+.portfolio-item-warp {
     
     position: relative;
 
-    .product-title {
+    .portfolio-title {
         position: absolute;
         top: 0;
         right: -13%;
@@ -14,14 +14,14 @@
     }
 }
 
-.product-hover {
+.portfolio-hover {
     position: relative;
-    height: 77%; 
-    width: 100%;
+    height: 100%; 
+  
     background-size:cover;
     background-position-x:center;
-     padding-bottom:100px;
-    >.product-hover-content {
+     padding-bottom:300px;
+    >.portfolio-hover-content {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -51,17 +51,17 @@
 
     
     &:hover {
-        .product-hover-content {
+        .portfolio-hover-content {
             opacity: 1;
         }
 
         .content-center,
         .content-between {
 
-            .product-name,
-            .product-subname,
-            .product-price
-           {
+            .portfolio-name,
+            .portfolio-subname,
+            .portfolio-price,
+            .portfolio-add-to-cart {
                 opacity: 1;
                 transform: translate(0);
             }
@@ -71,9 +71,10 @@
 
 
 
-.product-name,
-.product-subname,
-.product-price {
+.portfolio-name,
+.portfolio-subname,
+.portfolio-price,
+.portfolio-add-to-cart {
     a {
         text-decoration: none;
         transition: all .3s ease-in-out;
@@ -86,20 +87,20 @@
     }
 }
 
-.product-name {
+.portfolio-name {
    a {
         color: $white;
         font-size: 36px;
     }
 }
 
-.product-subname {
+.portfolio-subname {
     a {
         color: white;
     }
 }
 
-.product-price {
+.portfolio-price {
     margin-top: $spacer;
     span {
         font-family: 'Open Sans', sans-serif;
@@ -112,16 +113,16 @@
     }
 }
 
-.product-hover-content {
+.portfolio-hover-content {
 
   
     &.content-center {
-        .product-name {
+        .portfolio-name {
             transform: translateX(35px);
             transition: all .4s ease-in-out;
         }
 
-        .product-subname {
+        .portfolio-subname {
             transform: translateX(25px);
             transition: all .6s ease-in-out;
 
@@ -129,34 +130,37 @@
     }
 
     &.content-between {
-        .product-name {
+        .portfolio-name {
             transform: translateX(35px);
             transition: all .4s ease-in-out;
         }
 
-        .product-subname {
+        .portfolio-subname {
             transform: translateX(15px);
             transition: all .8s ease-in-out;
         }
 
-        .product-price {
+        .portfolio-price {
             transform: translateX(15px);
             transition: all .8s ease-in-out;
         }
 
-       
+        .portfolio-add-to-cart {
+            transform: translateX(25px);
+            transition: all .8s ease-in-out;
+        }
     }
 }
 
 @media (max-width:480px){
-    .product-hover {
+    .portfolio-hover {
     position: relative;
-    height: 77%; 
-    width:100%;
+    height: 100%; 
+  
     background-size:cover;
     background-position-x:center;
-     padding-bottom:80px;
-    >.product-hover-content {
+     padding-bottom:300px;
+    >.portfolio-hover-content {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -186,16 +190,17 @@
 
     
     &:hover {
-        .product-hover-content {
+        .portfolio-hover-content {
             opacity: 1;
         }
 
         .content-center,
         .content-between {
 
-            .product-name,
-            .product-subname,
-            .product-price {
+            .portfolio-name,
+            .portfolio-subname,
+            .portfolio-price,
+            .portfolio-add-to-cart {
                 opacity: 1;
                 transform: translate(0);
             }

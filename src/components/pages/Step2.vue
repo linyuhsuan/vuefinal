@@ -1,7 +1,7 @@
 <template>
   <div>
     
-    <div class="container text-primary">
+    <div class="container text-primary" style="margin-top:15%;">
       <div class="h4 text-center p-2">Shopping Cart</div>
       <div class="d-flex justify-content-around p-5 text-primary  font-weight-bold ">
          <div>1.確認購買商品</div>

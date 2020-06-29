@@ -1,9 +1,9 @@
 <template>
   <div>
     
-    <div class="container text-primary">
-      <div class="h4 text-center p-2">Shopping Cart</div>
-      <div class="d-flex justify-content-around p-5 text-primary  font-weight-bold ">
+    <div class="container text-primary" style="margin-top:15%;">
+      <div class="h4 text-center ">Shopping Cart</div>
+      <div class="d-flex justify-content-around p-2 text-primary  font-weight-bold ">
          <div>1.確認購買商品</div>
        <div >2.填寫運送資訊</div>
        <div>3.購物完成</div>

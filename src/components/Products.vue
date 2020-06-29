@@ -3,20 +3,20 @@
      
         <div class="">
             <!-- work list -->
-            <div class="portfolio-item-warp ">
+            <div class="product-item-warp ">
                 <div class="row">
                     <div class="col-12 col-md-6 p-3 " v-for="item in products" :key="item.id">
-                        <div class="portfolio-hover"  @click.prevent="moreInfo(item.id)">
-                            <div class="portfolio-hover-content content-between">
+                        <div class="product-hover"  @click.prevent="moreInfo(item.id)">
+                            <div class="product-hover-content content-between">
                                 <div>
-                                    <div class="portfolio-name">
+                                    <div class="product-name">
                                        <a>{{ item.title }}
                                         </a>
                                     </div>
-                                    <div class="portfolio-subname">
+                                    <div class="product-subname">
                                         <a>{{ item.description }}</a>
                                     </div>
-                                    <div class="portfolio-price">
+                                    <div class="product-price">
                                         <span class="light">{{ item.price | currency }}</span>
                                     </div>
                                 </div>

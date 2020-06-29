@@ -1,5 +1,5 @@
 <template>
-  <div class="container ">
+  <div class="container " style="margin-top:15%;">
        <div class="h4 text-center p-2 text-primary">Shopping Cart</div>
     <div class="d-flex justify-content-around p-3 text-primary">
          <router-link class="  font-weight-bold" to="/cart">1.確認購買商品</router-link>

@@ -3,10 +3,10 @@
 
   
   <div class="container py-6">
-   <div class="py-4">
+   <div class="">
         <div class="">
       <!-- 左側選單  -->
-      <div class=" row col-md-12 text-primary justify-content-center text-center ">
+      <div class=" row col-md-12 text-primary justify-content-center text-center " style="margin-top:10%;">
         <a class="col-3"
         v-for="item in categoryList" :key="item"  @click.prevent="category = item"
          :class="{'active': category == item}"  >
@@ -18,7 +18,7 @@
 		
    </div>
     
-    <div class="py-4" >
+    <div class="" >
    
         <div class="" >
         <div class="" v-if="category == '全部'" >

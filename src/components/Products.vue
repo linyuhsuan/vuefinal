@@ -20,7 +20,6 @@
                                         <span class="light">{{ item.price | currency }}</span>
                                     </div>
                                 </div>
-                                <!-- <button type="button" class="btn portfolio-add-to-cart" @click="addtoCart(item.id)"></button> -->
                             </div>
                             <img :src="`${ item.imageUrl }`" class="img-fluid" alt="">
                         </div>

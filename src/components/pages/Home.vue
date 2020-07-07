@@ -28,6 +28,7 @@
   
       
    <div class="container text-primary p-4 ">
+    
      <!-- 桌子 -->
         <div class="row flex-column-reverse flex-md-row mb-4 justify-content-center ">
           <div class="col-md-6">
@@ -44,7 +45,7 @@
             </div>
           </div>
           <div class="col-md-5 px-md-0 order-1 order-md-0">
-            <div class="d-flex align-items-center py-5 pl-4">
+            <div class="p-5 ">
             <div>
               <div class="my-5 border border-top-0 border-bottom-0 border-right-0  px-3">
                 <p class="mb-0"><small>桌子 ></small></p>
@@ -61,7 +62,7 @@
         <!-- 椅子 -->
                <div class="row flex-column-reverse  flex-md-row mb-4 justify-content-center">
                  <div class="col-md-3 px-md-0 order-1 order-md-0">
-            <div class="d-flex align-items-center  py-5 pl-4">
+            <div class="p-5">
               <div>
               <div class="my-5 border border-top-0 border-bottom-0 border-right-0 px-3">
                 <p class="mb-0"><small>椅子 ></small></p>
@@ -105,7 +106,7 @@
             </div>
           </div>
           <div class="col-md-5 px-md-0 order-1 order-md-0">
-            <div class="d-flex align-items-center  py-5 pl-4">
+            <div class="p-5">
               <div>
               <div class="my-5 border border-top-0 border-bottom-0  border-right-0 px-3">
                 <p class="mb-0"><small>裝飾 ></small></p>

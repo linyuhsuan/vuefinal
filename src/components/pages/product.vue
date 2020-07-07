@@ -2,12 +2,12 @@
   <div>
 
   
-  <div class="container py-6">
+  <div class="container ">
    <div class="">
         <div class="">
-      <!-- 左側選單  -->
-      <div class=" row col-md-12 text-primary justify-content-center text-center " style="margin-top:10%;">
-        <a class="col-3"
+     
+      <div class=" row col-md-12 text-primary justify-content-center text-center   " style="margin-top:20%;">
+        <a class="col-2"
         v-for="item in categoryList" :key="item"  @click.prevent="category = item"
          :class="{'active': category == item}"  >
           {{item}} 

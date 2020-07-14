@@ -1,6 +1,6 @@
 # La'quisine
 
-![https://linyuhsuan.github.io/vuefinal/#/](https://linyuhsuan.github.io/vuefinal/#/)
+![](https://linyuhsuan.github.io/vuefinal/#/)
 
 ## 簡介
 為前端練習作品，目的為正式上線並串上籃新金流。

@@ -48,13 +48,11 @@
 ![](https://github.com/linyuhsuan/vuefinal/blob/master/static/img/shoppingCart.png)
 
 ### 表單驗證
-- 表單基本檢查
+- 表單基本驗證檢查
 ![](https://github.com/linyuhsuan/vuefinal/blob/master/static/img/form.png)
 
 ### 訂單成立
 - 結帳後送出訂單，結帳狀態更改為已結帳
 ![](https://github.com/linyuhsuan/vuefinal/blob/master/static/img/check.png)
 
-## 後台內容介紹
-- 商品基本新增刪功能
-![]()
+

@@ -28,7 +28,7 @@
 ## 前台內容介紹
 ### 首頁
 - 使用輪播
-![](https://github.com/linyuhsuan/vuefinal/blob/master/static/img/home.png)
+![](https://github.com/linyuhsuan/vuefinal/blob/master/static/img/p1.png)
 
 ### 商品列表
 - 最新上架的商品

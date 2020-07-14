@@ -1,7 +1,5 @@
 # La'quisine
-
-## Demo
-![](https://linyuhsuan.github.io/vuefinal/#/)
++ [https://linyuhsuan.github.io/vuefinal/#/](https://linyuhsuan.github.io/vuefinal/#/)
 ## 簡介
 為前端練習作品，目的為正式上線並串上籃新金流。
 + 前台: 所有商品、商品分類、以及商品細項展示，購物車功能、下單、結帳資訊、管理員登入等。

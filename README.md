@@ -1,9 +1,6 @@
 # La'quisine
 
-![]()
-
-## Demo
-[]()
+![https://linyuhsuan.github.io/vuefinal/#/](https://linyuhsuan.github.io/vuefinal/#/)
 
 ## 簡介
 為前端練習作品，目的為正式上線並串上籃新金流。
@@ -28,7 +25,7 @@
 ## 前台內容介紹
 ### 首頁
 - 使用輪播
-![](https://github.com/linyuhsuan/vuefinal/blob/master/static/img/p1.png)
+![](https://github.com/linyuhsuan/vuefinal/blob/master/static/img/home.png)
 
 ### 商品列表
 - 最新上架的商品
